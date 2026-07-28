@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 — IPTV直播</title>
+  <meta
+    name="description"
+    content="IPTV直播隐私政策。了解应用可能收集的信息、使用方式以及您的隐私选择。"
+  />
+  <style>
+    :root {
+      --bg: #15171B;
+      --bg-elev: #1E2127;
+      --ink: #F3F0E8;
+      --muted: #A9A28F;
+      --accent: #C33024;
+      --accent-soft: #E8756B;
+      --border: #3A3F47;
+      --shadow: rgba(0, 0, 0, 0.5);
+      --maxw: 820px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background:
+        radial-gradient(1200px 600px at 50% -10%, rgba(195, 48, 36, 0.14), transparent 60%),
+        var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+        "Helvetica Neue", "Segoe UI", sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent-soft); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: saturate(140%) blur(12px);
+      background: rgba(21, 23, 27, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; height: 64px;
+      max-width: 1080px; margin: 0 auto; padding: 0 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+    .brand:hover { text-decoration: none; }
+    .brand .logo {
+      width: 34px; height: 34px; border-radius: 9px; overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+      background: var(--accent);
+    }
+    .brand .logo img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .brand .name { font-size: 17px; font-weight: 600; letter-spacing: 0.2px; color: var(--ink); }
+    .nav .back { font-size: 14px; color: var(--muted); }
+    .nav .back:hover { color: var(--ink); text-decoration: none; }
+
+    .doc-head { text-align: center; padding: 72px 0 40px; }
+    .doc-head .eyebrow {
+      font-size: 12px; letter-spacing: 4px; text-transform: uppercase;
+      color: var(--accent-soft); margin-bottom: 18px; font-weight: 600;
+    }
+    .doc-head h1 {
+      font-size: clamp(34px, 6vw, 52px);
+      font-weight: 700; letter-spacing: -0.02em;
+    }
+    .doc-head .meta { color: var(--muted); font-size: 14px; margin-top: 16px; }
+
+    .rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 8px 0 0; }
+    .rule::before, .rule::after {
+      content: ""; height: 1px; width: 60px;
+      background: linear-gradient(90deg, transparent, rgba(232, 117, 107, 0.55));
+    }
+    .rule::after { background: linear-gradient(90deg, rgba(232, 117, 107, 0.55), transparent); }
+
+    article {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 40px 36px;
+      margin-bottom: 64px;
+      box-shadow: 0 30px 70px -30px var(--shadow);
+    }
+    article > p.intro { color: var(--muted); font-size: 15.5px; }
+
+    h2 {
+      font-size: 22px; font-weight: 700;
+      color: var(--ink);
+      margin: 34px 0 12px;
+      display: flex; align-items: baseline; gap: 12px;
+    }
+    h2 .num {
+      font-size: 13px; font-weight: 700;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent-soft), var(--accent));
+      width: 26px; height: 26px; border-radius: 8px;
+      display: inline-grid; place-items: center; flex: 0 0 auto;
+    }
+    h2:first-of-type { margin-top: 10px; }
+
+    p { font-size: 15px; color: #d9d4c8; margin: 10px 0; }
+    ul { margin: 10px 0 10px 4px; padding-left: 22px; }
+    li { font-size: 15px; color: #d9d4c8; margin: 8px 0; }
+    strong { color: var(--ink); font-weight: 600; }
+
+    .contact-box {
+      margin-top: 14px;
+      padding: 18px 20px;
+      border-radius: 12px;
+      background: rgba(195, 48, 36, 0.12);
+      border: 1px solid rgba(232, 117, 107, 0.28);
+    }
+    .contact-box p { color: var(--ink); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0 48px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    footer .fbrand {
+      color: var(--ink); font-weight: 600; margin-bottom: 8px; font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      article { padding: 28px 20px; border-radius: 14px; }
+      .doc-head { padding: 48px 0 28px; }
+      .nav { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="./index.html">
+        <div class="logo">
+          <img src="./assets/app-icon.png" alt="IPTV直播" />
+        </div>
+        <div class="name">IPTV直播</div>
+      </a>
+      <a class="back" href="./index.html">← 返回首页</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="doc-head">
+      <div class="eyebrow">Legal</div>
+      <h1>隐私政策</h1>
+      <div class="rule"></div>
+      <div class="meta">最近更新：2026 年 7 月 28 日</div>
+    </div>
+
+    <article>
+      <p class="intro">
+        IPTV直播（“本应用”、“我们”）尊重并保护每一位用户的隐私。本隐私政策说明本应用可能收集哪些信息、如何使用这些信息，以及您可行使的选择。我们会以审慎态度处理相关信息。除本政策所述情形外，未经您事先同意，我们不会向第三方披露您的信息。使用本应用，即表示您同意本隐私政策的内容。
+      </p>
+
+      <h2><span class="num">1</span>适用范围</h2>
+      <p>
+        本政策适用于 IPTV直播 移动应用程序。IPTV直播 是一款直播播放工具，支持订阅管理、频道浏览、收藏与播放等功能。使用本应用<strong>无需注册账号</strong>，也<strong>无需提供</strong>姓名、手机号、电子邮箱等个人身份信息。
+      </p>
+      <p>
+        在您使用本应用时，我们可能会自动处理少量设备技术信息，包括但不限于：设备与操作系统类型、应用版本、语言与地区设置，以及基础诊断或崩溃信息。这些数据不会用于识别您的个人身份。
+      </p>
+
+      <h2><span class="num">2</span>我们收集的信息</h2>
+      <ul>
+        <li>
+          <strong>收藏与偏好设置。</strong>您收藏的频道、主题外观（浅色/深色）、订阅配置等信息保存在<strong>您的设备本地</strong>，不会上传至我们的服务器。
+        </li>
+        <li>
+          <strong>订阅与播放内容。</strong>本应用会根据您添加的订阅链接或播放地址，从相应的第三方直播源获取节目流。此类网络请求属于正常互联网访问，并受该内容提供方自身政策约束。
+        </li>
+        <li>
+          <strong>技术与诊断数据。</strong>为保障应用稳定运行，可能会处理与应用性能相关的匿名信息（例如崩溃报告）。
+        </li>
+      </ul>
+      <p>
+        我们<strong>不会</strong>收集您的通讯录、健康数据、精确地理位置、相册或其他敏感个人信息。
+      </p>
+
+      <h2><span class="num">3</span>信息使用方式</h2>
+      <p>我们仅将上述有限信息用于：</p>
+      <ul>
+        <li>提供、运营并展示本应用的功能与内容；</li>
+        <li>在您的设备上记住收藏、订阅与偏好设置；</li>
+        <li>排查问题、改善性能并优化使用体验。</li>
+      </ul>
+
+      <h2><span class="num">4</span>信息共享与披露</h2>
+      <ul>
+        <li>我们<strong>不会</strong>出售您的信息，也不会将其披露给不可信的第三方。</li>
+        <li>在适用法律、法规、法律程序或政府/司法机关合法要求的情况下，我们可能会披露相关信息。</li>
+        <li>若您违反适用法律法规或本应用相关约定，且有必要向第三方披露时，我们可能依法披露相关信息。</li>
+      </ul>
+
+      <h2><span class="num">5</span>数据存储与传输</h2>
+      <p>
+        收藏、订阅配置与设置信息保存在您的设备本地，卸载本应用后通常会被清除。由我们或服务提供商处理的技术数据，可能存储于您所在国家/地区以外的服务器，并可能依据适用法律在当地被访问、存储或处理。
+      </p>
+
+      <h2><span class="num">6</span>数据安全</h2>
+      <p>
+        我们采取合理的技术与管理措施，保护信息免遭未经授权的访问、披露或丢失。但任何互联网传输或电子存储方式都无法保证绝对安全。请妥善保护您的设备与个人信息，仅在必要时向他人提供。
+      </p>
+
+      <h2><span class="num">7</span>第三方服务</h2>
+      <p>
+        直播内容由您配置的第三方订阅源或播放地址提供。加载或播放时，相关内容提供方可能收到常规网络请求信息（例如 IP 地址、设备类型等）。该等信息的处理受对应提供方隐私政策约束，我们无法控制第三方如何使用这些信息。
+      </p>
+
+      <h2><span class="num">8</span>儿童隐私</h2>
+      <p>
+        本应用面向一般用户，并非专门面向儿童。我们不会故意收集儿童的个人信息。如果您认为儿童向我们提供了个人信息，请与我们联系，我们将采取适当措施处理。
+      </p>
+
+      <h2><span class="num">9</span>政策变更</h2>
+      <p>
+        我们可能不时更新本隐私政策。更新内容将发布于本页面，并同步调整“最近更新”日期。政策变更生效后，您继续使用本应用，即视为接受修订后的政策。
+      </p>
+
+      <h2><span class="num">10</span>联系我们</h2>
+      <p>如您对本隐私政策或本应用的隐私实践有任何疑问，请通过以下方式联系我们：</p>
+      <div class="contact-box">
+        <p style="margin:0 0 8px;">
+          Email：
+          <a href="mailto:douglassmaster001@126.com">douglassmaster001@126.com</a>
+        </p>
+        <p style="margin:0;">
+          App Store：
+          <a href="https://apps.apple.com/app/id6747340774" target="_blank" rel="noreferrer">
+            IPTV直播 应用页面
+          </a>
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fbrand">IPTV直播</div>
+      <div>Copyright © 2026 IPTV直播. All rights reserved.</div>
+      <div style="margin-top:10px;">
+        <a href="mailto:douglassmaster001@126.com">douglassmaster001@126.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
