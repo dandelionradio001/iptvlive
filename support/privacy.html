@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隐私政策 — 节目源管家</title>
+  <meta
+    name="description"
+    content="节目源管家隐私政策。了解应用可能收集的信息、使用方式以及您的隐私选择。"
+  />
+  <style>
+    :root {
+      --bg: #15171B;
+      --bg-elev: #1E2127;
+      --ink: #F3F0E8;
+      --muted: #A9A28F;
+      --accent: #C33024;
+      --accent-soft: #E8756B;
+      --border: #3A3F47;
+      --shadow: rgba(0, 0, 0, 0.5);
+      --maxw: 820px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+        "Helvetica Neue", "Segoe UI", sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent-soft); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: saturate(140%) blur(12px);
+      background: rgba(21, 23, 27, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; height: 64px;
+      max-width: 1080px; margin: 0 auto; padding: 0 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+    .brand:hover { text-decoration: none; }
+    .brand .logo {
+      width: 34px; height: 34px; border-radius: 9px; overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+      background: var(--accent);
+    }
+    .brand .logo img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    .brand .name { font-size: 17px; font-weight: 600; letter-spacing: 0.2px; color: var(--ink); }
+    .nav .back { font-size: 14px; color: var(--muted); }
+    .nav .back:hover { color: var(--ink); text-decoration: none; }
+
+    .doc-head { text-align: center; padding: 72px 0 40px; }
+    .doc-head .eyebrow {
+      font-size: 12px; letter-spacing: 0;
+      color: var(--accent-soft); margin-bottom: 18px; font-weight: 600;
+    }
+    .doc-head h1 {
+      font-size: clamp(34px, 6vw, 52px);
+      font-weight: 700; letter-spacing: -0.02em;
+    }
+    .doc-head .meta { color: var(--muted); font-size: 14px; margin-top: 16px; }
+
+    .rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 8px 0 0; }
+    .rule::before, .rule::after {
+      content: ""; height: 1px; width: 60px;
+      background: rgba(232, 117, 107, 0.55);
+    }
+
+    article {
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 40px 36px;
+      margin-bottom: 64px;
+      box-shadow: 0 30px 70px -30px var(--shadow);
+    }
+    article > p.intro { color: var(--muted); font-size: 15.5px; }
+
+    h2 {
+      font-size: 22px; font-weight: 700;
+      color: var(--ink);
+      margin: 34px 0 12px;
+      display: flex; align-items: baseline; gap: 12px;
+    }
+    h2 .num {
+      font-size: 13px; font-weight: 700;
+      color: #fff;
+      background: var(--accent);
+      width: 26px; height: 26px; border-radius: 8px;
+      display: inline-grid; place-items: center; flex: 0 0 auto;
+    }
+    h2:first-of-type { margin-top: 10px; }
+
+    p { font-size: 15px; color: #d9d4c8; margin: 10px 0; }
+    ul { margin: 10px 0 10px 4px; padding-left: 22px; }
+    li { font-size: 15px; color: #d9d4c8; margin: 8px 0; }
+    strong { color: var(--ink); font-weight: 600; }
+
+    .contact-box {
+      margin-top: 14px;
+      padding: 18px 20px;
+      border-radius: 8px;
+      background: rgba(195, 48, 36, 0.12);
+      border: 1px solid rgba(232, 117, 107, 0.28);
+    }
+    .contact-box p { color: var(--ink); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0 48px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    footer .fbrand {
+      color: var(--ink); font-weight: 600; margin-bottom: 8px; font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      article { padding: 28px 20px; }
+      .doc-head { padding: 48px 0 28px; }
+      .nav { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="./index.html">
+        <div class="logo">
+          <img src="./assets/app-icon.png" alt="节目源管家" />
+        </div>
+        <div class="name">节目源管家</div>
+      </a>
+      <a class="back" href="./index.html">← 返回首页</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="doc-head">
+      <div class="eyebrow">隐私与数据</div>
+      <h1>隐私政策</h1>
+      <div class="rule"></div>
+      <div class="meta">最近更新：2026 年 8 月 22 日</div>
+    </div>
+
+    <article>
+      <p class="intro">
+        节目源管家（“本应用”、“我们”）尊重并保护用户隐私。本政策说明应用在管理频道清单、节目表与节目提醒时如何处理数据，以及您可以进行的选择。
+      </p>
+
+      <h2><span class="num">1</span>适用范围</h2>
+      <p>
+        本政策适用于节目源管家 iOS 应用。应用是一款本地优先的频道清单、XMLTV 节目指南与线路状态管理工具。使用应用<strong>无需注册账户</strong>，我们也不会要求您提供姓名、手机号或电子邮箱等身份信息。
+      </p>
+
+      <h2><span class="num">2</span>我们收集的信息</h2>
+      <ul>
+        <li>
+          <strong>本地配置。</strong>频道源、节目表源、收藏、主题设置和节目提醒保存在<strong>您的设备本地</strong>，不会上传至我们的服务器。
+        </li>
+        <li>
+          <strong>您选择的文件。</strong>导入本地节目表时，应用只读取您通过 iOS 文件选择器主动选取的 XML、XMLTV 或 GZ 文件，并将工作副本保存在应用目录中。
+        </li>
+        <li>
+          <strong>网络来源。</strong>应用会直接访问您添加的 M3U、XMLTV、频道图标和媒体地址，以读取清单、节目数据、检测线路或进行播放。这些请求不会通过我们的服务器转发。
+        </li>
+      </ul>
+      <p>
+        我们不使用广告、第三方分析或用户行为追踪服务，也不会收集通讯录、健康数据、精确位置或相册内容。
+      </p>
+
+      <h2><span class="num">3</span>信息使用方式</h2>
+      <p>我们仅将上述有限信息用于：</p>
+      <ul>
+        <li>在设备上读取和展示您导入的频道清单与节目表；</li>
+        <li>保存收藏、来源配置、主题设置和节目提醒；</li>
+        <li>检测您所添加频道地址的连接状态并进行播放。</li>
+      </ul>
+
+      <h2><span class="num">4</span>信息共享与披露</h2>
+      <ul>
+        <li>我们不会出售、出租或向第三方共享您的频道配置、节目表、收藏或提醒。</li>
+        <li>应用访问用户指定的第三方地址时，对方会收到完成网络连接所需的常规信息，例如 IP 地址。</li>
+      </ul>
+
+      <h2><span class="num">5</span>数据存储与传输</h2>
+      <p>
+        频道配置、节目表来源、收藏、提醒和设置保存在应用的本地存储中。您可以在应用内删除来源和取消提醒；卸载应用后，这些本地数据通常会被系统清除。
+      </p>
+
+      <h2><span class="num">6</span>数据安全</h2>
+      <p>
+        请妥善保护设备，并仅添加您信任且有权访问的来源。任何互联网传输或电子存储方式都无法保证绝对安全，第三方来源的安全性不由我们控制。
+      </p>
+
+      <h2><span class="num">7</span>第三方服务</h2>
+      <p>
+        频道、节目表、图标和媒体内容均来自您选择的第三方地址。加载这些资源时，提供方可能收到 IP 地址、请求时间等常规网络信息，其处理方式受对应提供方的隐私政策约束。应用内“节目表下载目录”会打开外部网页，由您自行决定是否访问和使用。
+      </p>
+
+      <h2><span class="num">8</span>儿童隐私</h2>
+      <p>
+        本应用面向一般用户，并非专门面向儿童。我们不会故意收集儿童的个人信息。如果您认为儿童向我们提供了个人信息，请与我们联系，我们将采取适当措施处理。
+      </p>
+
+      <h2><span class="num">9</span>政策变更</h2>
+      <p>
+        我们可能不时更新本隐私政策。更新内容将发布于本页面，并同步调整“最近更新”日期。政策变更生效后，您继续使用本应用，即视为接受修订后的政策。
+      </p>
+
+      <h2><span class="num">10</span>联系我们</h2>
+      <p>如您对本隐私政策或本应用的隐私实践有任何疑问，请通过以下方式联系我们：</p>
+      <div class="contact-box">
+        <p style="margin:0 0 8px;">
+          Email：
+          <a href="mailto:douglassmaster001@126.com">douglassmaster001@126.com</a>
+        </p>
+        <p style="margin:0;">
+          App Store：
+          <a href="https://apps.apple.com/app/id6747340774" target="_blank" rel="noreferrer">
+            节目源管家应用页面
+          </a>
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="fbrand">节目源管家</div>
+      <div>Copyright © 2026 节目源管家. All rights reserved.</div>
+      <div style="margin-top:10px;">
+        <a href="mailto:douglassmaster001@126.com">douglassmaster001@126.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
